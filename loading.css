@@ -1,0 +1,101 @@
+.loading {
+	width: 10px;
+	height: 250px;
+	position: absolute; 	/* position, top, and left styles vertically and horizontally center the loading icon */
+	top: calc(50% - 125px); /* -125 to be half the height of the element */
+	left: 50%;
+	transform: rotate(0deg);
+	background-color: black;
+	animation-name: loadingIconAnimation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.loading #l_one {
+	position: absolute;
+	width: 10px;
+	height: 250px;
+	transform: rotate(0deg);
+	background-color: gray;
+}
+.loading #l_two {
+	width: 10px;
+	height: 250px;
+	transform: rotate(90deg);
+	background-color: gray;
+	position: absolute;
+}
+.loading #l_three {
+	width: 10px;
+	height: 250px;
+	transform: rotate(180deg);
+	background-color: gray;
+	position: absolute;
+}
+.loading #l_four {
+	width: 10px;
+	height: 250px;
+	transform: rotate(270deg);
+	background-color: gray;
+	position: absolute;
+}
+.loading #l_five {
+	width: 10px;
+	height: 250px;
+	transform: rotate(45deg);
+	background-color: gray;
+	position: absolute;
+}
+.loading #l_six {
+	width: 10px;
+	height: 250px;
+	transform: rotate(135deg);
+	background-color: gray;
+	position: absolute;
+}
+.loading #l_seven {
+	width: 10px;
+	height: 250px;
+	transform: rotate(225deg);
+	background-color: gray;
+	position: absolute;
+}
+.loading #l_eight {
+	width: 10px;
+	height: 250px;
+	transform: rotate(315deg);
+	background-color: gray;
+	position: absolute;
+}
+@keyframes loadingIconAnimation {
+	0% {
+		transform: rotate(0deg);
+		background-color: black;
+	}
+	25% {
+		/*transform: rotate(360deg);*/
+		background-color: yellow;
+	}
+	50% {
+		/*transform: rotate(360deg);*/
+		background-color: purple;
+	}
+	75% {
+		/*transform: rotate(360deg);*/
+		background-color: red;
+	}
+	100% {
+		transform: rotate(360deg);
+		background-color: black;
+	}
+}
+
+/*
+@keyframes startGaugeGraphAnimation {
+    0%   {transform: rotate(270deg);}
+    33%  {transform: rotate(450deg);}
+    100% {transform: rotate(270deg);}
+}
+.addAnimation {
+    animation-name: startGaugeGraphAnimation;
+    animation-duration: 2s;
+}*/
